@@ -6,51 +6,48 @@ const current = ref<string[]>(['mail']);
 const items = ref<MenuProps['items']>([
   {
     key: 'mail',
-    icon: () => h(MailOutlined),
     label: 'Navigation One',
     title: 'Navigation One',
   },
   {
     key: 'app',
-    icon: () => h(AppstoreOutlined),
     label: 'Navigation Two',
     title: 'Navigation Two',
   },
   {
     key: 'sub1',
-    icon: () => h(SettingOutlined),
     label: 'Navigation Three - Submenu',
     title: 'Navigation Three - Submenu',
-    children: [
-      {
-        type: 'group',
-        label: 'Item 1',
-        children: [
-          {
-            label: 'Option 1',
-            key: 'setting:1',
-          },
-          {
-            label: 'Option 2',
-            key: 'setting:2',
-          },
-        ],
-      },
-      {
-        type: 'group',
-        label: 'Item 2',
-        children: [
-          {
-            label: 'Option 3',
-            key: 'setting:3',
-          },
-          {
-            label: 'Option 4',
-            key: 'setting:4',
-          },
-        ],
-      },
-    ],
+  },
+  {
+    key: 'app',
+    label: 'Navigation Two',
+    title: 'Navigation Two',
+  },
+  {
+    key: 'sub1',
+    label: 'Navigation Three - Submenu',
+    title: 'Navigation Three - Submenu',
+  },
+  {
+    key: 'app',
+    label: 'Navigation Two',
+    title: 'Navigation Two',
+  },
+  {
+    key: 'sub1',
+    label: 'Navigation Three - Submenu',
+    title: 'Navigation Three - Submenu',
+  },
+  {
+    key: 'app',
+    label: 'Navigation Two',
+    title: 'Navigation Two',
+  },
+  {
+    key: 'sub1',
+    label: 'Navigation Three - Submenu',
+    title: 'Navigation Three - Submenu',
   },
   {
     key: 'alipay',
@@ -68,7 +65,7 @@ const items = ref<MenuProps['items']>([
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600 text-4xl" href="#">
               <span class="sr-only ">Home</span>
-              Test
+              Shopping BK
             </a>
           </div>
 
